@@ -2,7 +2,7 @@ import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
-// import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
+import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
 
 export async function getStaticProps({
@@ -66,28 +66,18 @@ export default function Home({
         headline="Fühl den Faça Spirit."
         description="Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt."
       />
-      <Grid layout="B" variant="filled">
-        {products.slice(0, 3).map((product: any, i: number) => (
-          <ProductCard
-            key={product.id}
-            product={product}
-            imgProps={{
-              width: i === 0 ? 1080 : 540,
-              height: i === 0 ? 1080 : 540,
-            }}
-          />
-        ))}
-      </Grid>
+      <div>
+        Newsletter
+        <form>
+          <input type="text" />
+          <input type="submit" />
+        </form>
+      </div>
       <Marquee>
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
-      {/* <HomeAllProductsGrid
-        newestProducts={products}
-        categories={categories}
-        brands={brands}
-      /> */}
     </>
   )
 }
