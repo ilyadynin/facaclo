@@ -45,10 +45,11 @@ const CartSidebarView: FC = () => {
             <Bag className="absolute" />
           </span>
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Your cart is empty
+            Dein Einkaufswagen is leer
           </h2>
           <p className="text-accent-3 px-10 text-center pt-2">
-            Biscuit oat cake wafer icing ice cream tiramisu pudding cupcake.
+            Das solltest du mithilfe von unseren tollen Produkten schleunigst
+            ändern 🤠
           </p>
         </div>
       ) : error ? (
