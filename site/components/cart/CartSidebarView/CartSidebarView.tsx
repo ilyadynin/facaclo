@@ -113,11 +113,11 @@ const CartSidebarView: FC = () => {
             <div>
               {process.env.COMMERCE_CUSTOMCHECKOUT_ENABLED ? (
                 <Button Component="a" width="100%" onClick={goToCheckout}>
-                  Proceed to Checkout ({total})
+                  Bezahlen ({total})
                 </Button>
               ) : (
                 <Button href="/checkout" Component="a" width="100%">
-                  Proceed to Checkout
+                  Bezahlen
                 </Button>
               )}
             </div>

@@ -15,10 +15,10 @@ import getSlug from '@lib/get-slug'
 import rangeMap from '@lib/range-map'
 
 const SORT = {
-  'trending-desc': 'Trending',
-  'latest-desc': 'Latest arrivals',
-  'price-asc': 'Price: Low to high',
-  'price-desc': 'Price: High to low',
+  'trending-desc': 'Im Trend',
+  'latest-desc': 'Noch verfügbar',
+  'price-asc': 'Preis: Unten nach oben',
+  'price-desc': 'Preis: Oben nach unten',
 }
 
 import {

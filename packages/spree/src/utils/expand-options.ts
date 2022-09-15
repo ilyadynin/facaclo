@@ -10,7 +10,7 @@ import type { OptionTypeAttr, ExpandedProductOption } from '../types'
 import sortOptionsByPosition from '../utils/sort-option-types'
 
 const isColorProductOption = (productOption: ExpandedProductOption) => {
-  return productOption.displayName === 'Color'
+  return productOption.displayName === 'Farbe'
 }
 
 const expandOptions = (

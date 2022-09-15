@@ -40,7 +40,7 @@ const Searchbar: FC<Props> = ({ className, id = 'search' }) => {
       <input
         id={id}
         className={s.input}
-        placeholder="Search for products..."
+        placeholder="Im Faça Store suchen ..."
         defaultValue={router.query.q}
         onKeyUp={handleKeyUp}
       />
