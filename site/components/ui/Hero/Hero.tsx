@@ -7,7 +7,7 @@ interface HeroProps {
   className?: string
   headline: string
   description: string
-  form: boolean
+  form?: boolean
 }
 
 const Hero: FC<HeroProps> = ({ headline, description, form }) => {
