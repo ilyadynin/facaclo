@@ -1,19 +1,19 @@
 {
-  "title": "FACA - Die Brand aus Österreich",
-  "titleTemplate": "%s - FACA",
+  "title": "Faça - Die Brand aus Österreich",
+  "titleTemplate": "%s - Faça",
   "description": "Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt.",
   "openGraph": {
-    "title": "FACA - Die Brand aus Österreich",
+    "title": "FFaçaACA - Die Brand aus Österreich",
     "description": "Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt.",
     "type": "website",
     "url": "https://facaclo.com",
-    "site_name": "FACA - Die Brand aus Österreich",
+    "site_name": "Faça - Die Brand aus Österreich",
     "images": [
       {
         "url": "/",
         "width": "800",
         "height": "600",
-        "alt": "FACA - Die Brand aus Österreich"
+        "alt": "FaçaFaça - Die Brand aus Österreich"
       }
     ]
   },
