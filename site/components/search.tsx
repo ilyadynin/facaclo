@@ -279,10 +279,10 @@ export default function Search({ categories, brands }: SearchPropsType) {
                       hidden: !data.found,
                     })}
                   >
-                    Showing {data.products.length} results{' '}
+                    {data.products.length} Produkte wurden gefunden{' '}
                     {q && (
                       <>
-                        for "<strong>{q}</strong>"
+                        für "<strong>{q}</strong>"
                       </>
                     )}
                   </span>
@@ -351,7 +351,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   aria-haspopup="true"
                   aria-expanded="true"
                 >
-                  {sort ? SORT[sort as keyof typeof SORT] : 'Relevanz'}
+                  {sort ? SORT[sort as keyof typeof SORT] : 'Relevance'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
