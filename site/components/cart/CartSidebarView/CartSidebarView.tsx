@@ -99,11 +99,11 @@ const CartSidebarView: FC = () => {
               </li>
               <li className="flex justify-between py-1">
                 <span>Steuern</span>
-                <span>Calculated at checkout</span>
+                <span>Werden später berechnet</span>
               </li>
               <li className="flex justify-between py-1">
                 <span>Versand</span>
-                <span className="font-bold tracking-wide">FREE</span>
+                <span className="font-bold tracking-wide">UMSONST</span>
               </li>
             </ul>
             <div className="flex justify-between border-t border-accent-2 py-3 font-bold mb-2">
