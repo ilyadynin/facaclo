@@ -76,7 +76,7 @@ const CartSidebarView: FC = () => {
             <Link href="/cart">
               <a>
                 <Text variant="sectionHeading" onClick={handleClose}>
-                  My Cart
+                  Mein Warenkorb
                 </Text>
               </a>
             </Link>
