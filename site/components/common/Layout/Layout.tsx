@@ -124,11 +124,11 @@ const Layout: React.FC<Props> = ({
           <SidebarUI links={navBarlinks} />
         </CheckoutProvider>
         <FeatureBar
-          title="This site uses cookies to improve your experience. By clicking, you agree to our Privacy Policy."
+          title="Wir nutzen Cookies 🍪 um dein Einkaufserlebnis auf Faça zu verbessern. Wenn du akzeptieren klickst, stimmst du unserer Datenschutzerklärung & AGB zu."
           hide={acceptedCookies}
           action={
             <Button className="mx-5" onClick={() => onAcceptCookies()}>
-              Accept cookies
+              Cookies akzeptieren
             </Button>
           }
         />
