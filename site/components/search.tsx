@@ -81,7 +81,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                 >
                   {activeCategory?.name
                     ? `Category: ${activeCategory?.name}`
-                    : 'All Categories'}
+                    : 'Alle Kategorien'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +128,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Categories
+                          Alle Kategorien
                         </a>
                       </Link>
                     </li>
@@ -229,7 +229,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                             'block lg:inline-block px-4 py-2 lg:p-0 lg:my-2 lg:mx-4'
                           }
                         >
-                          All Designers
+                          Alle Kollektionen
                         </a>
                       </Link>
                     </li>
@@ -351,7 +351,7 @@ export default function Search({ categories, brands }: SearchPropsType) {
                   aria-haspopup="true"
                   aria-expanded="true"
                 >
-                  {sort ? SORT[sort as keyof typeof SORT] : 'Relevance'}
+                  {sort ? SORT[sort as keyof typeof SORT] : 'Relevanz'}
                   <svg
                     className="-mr-1 ml-2 h-5 w-5"
                     xmlns="http://www.w3.org/2000/svg"
