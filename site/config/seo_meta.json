@@ -1,19 +1,19 @@
 {
-  "title": "FACA Storefront | Powered by Next.js Commerce",
-  "titleTemplate": "%s - FACA Storefront",
-  "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+  "title": "FACA - Die Brand aus Österreich",
+  "titleTemplate": "%s - FACA",
+  "description": "Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt.",
   "openGraph": {
-    "title": "FACA Storefront | Powered by Next.js Commerce",
-    "description": "Next.js Commerce - https://www.nextjs.org/commerce",
+    "title": "FACA - Die Brand aus Österreich",
+    "description": "Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt.",
     "type": "website",
-    "url": "https://nextjs.org/commerce",
-    "site_name": "Next.js Commerce",
+    "url": "https://facaclo.com",
+    "site_name": "FACA - Die Brand aus Österreich",
     "images": [
       {
-        "url": "/card.png",
+        "url": "/",
         "width": "800",
         "height": "600",
-        "alt": "Next.js Commerce"
+        "alt": "FACA - Die Brand aus Österreich"
       }
     ]
   },
