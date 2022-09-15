@@ -18,7 +18,7 @@ export default function MenuSidebarView({
           <ul>
             <li className={s.item} onClick={() => closeSidebar()}>
               <Link href="/search">
-                <a>All</a>
+                <a>Alle Produkte</a>
               </Link>
             </li>
             {links.map((l: any) => (
