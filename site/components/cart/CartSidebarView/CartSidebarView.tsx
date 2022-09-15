@@ -45,7 +45,7 @@ const CartSidebarView: FC = () => {
             <Bag className="absolute" />
           </span>
           <h2 className="pt-6 text-2xl font-bold tracking-wide text-center">
-            Dein Einkaufswagen is leer
+            Dein Einkaufswagen ist leer
           </h2>
           <p className="text-accent-3 px-10 text-center pt-2">
             Das solltest du mithilfe von unseren tollen Produkten schleunigst
