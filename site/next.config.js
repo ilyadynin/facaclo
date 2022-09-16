@@ -16,7 +16,7 @@ module.exports = withCommerceConfig({
   },
   images: {
     domains: ['represocial.fra1.cdn.digitaloceanspaces.com'],
-    formats: ['image/avif', 'image/jpg', 'image/webp'],
+    formats: ['image/jpg', 'image/webp'],
   },
   rewrites() {
     return [
