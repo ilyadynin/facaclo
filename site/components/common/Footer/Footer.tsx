@@ -8,6 +8,7 @@ import { Github, Vercel } from '@components/icons'
 import { Logo, Container } from '@components/ui'
 import { I18nWidget } from '@components/common'
 import s from './Footer.module.css'
+import { Instagram } from '@styled-icons/boxicons-logos/Instagram'
 
 interface Props {
   className?: string
@@ -53,6 +54,14 @@ const Footer: FC<Props> = ({ className, pages }) => {
           <div className="col-span-1 lg:col-span-2 flex items-start lg:justify-end text-primary"></div>
         </div>
         <div className="pt-6 pb-10 flex flex-col md:flex-row justify-between items-center space-y-4 text-accent-6 text-sm">
+          <div>
+            Unser Instagram:{' '}
+            <Link href="https://instagram.com/faca.clo">
+              <span>
+                <Instagram style={{ display: 'inline-block', width: 50 }} />
+              </span>
+            </Link>
+          </div>
           <div>
             <span>&copy; 2022 FACA ÖSTERREICH.</span>
           </div>
