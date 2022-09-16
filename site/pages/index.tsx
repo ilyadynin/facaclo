@@ -85,17 +85,17 @@ export default function Home({
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
-      <Hero
-        headline="Fühl den Faça Spirit."
-        description="Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt."
-        form={true}
-      />
       <Marquee>
         {products.slice(3).map((product: any, i: number) => (
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
-      <Umwelt></Umwelt>
+      <Umwelt />
+      <Hero
+        headline="Fühl den Faça Spirit."
+        description="Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt. Eine wilde dynamische Streewear-Brand aus Österreich, die nie zum Stillstand kommt."
+        form={true}
+      />
     </>
   )
 }
