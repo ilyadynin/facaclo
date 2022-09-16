@@ -75,7 +75,7 @@ const UserNav: React.FC<{
                   aria-label="Menu"
                   onClick={() => (isCustomerLoggedIn ? null : openModal())}
                 >
-                  <UserCircle />
+                  <UserCircle style={{ width: 30, height: 30 }} />
                 </button>
               </DropdownTrigger>
               <CustomerMenuContent />
