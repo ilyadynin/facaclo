@@ -73,7 +73,6 @@ const UserNav: React.FC<{
               <DropdownTrigger>
                 <button
                   aria-label="Menu"
-                  className={s.avatarButton}
                   onClick={() => (isCustomerLoggedIn ? null : openModal())}
                 >
                   <UserCircle />
