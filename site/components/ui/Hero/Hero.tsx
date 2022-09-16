@@ -58,8 +58,12 @@ const Hero: FC<HeroProps> = ({ headline, description, form }) => {
             {form && (
               <div>
                 {!submit && (
-                  <form>
-                    <input type="text" />
+                  <form className={s.styledForm}>
+                    <input
+                      className={s.styledInput}
+                      type="text"
+                      placeholder="E-Mail"
+                    />
                     <input type="submit" onClick={submitHandler} />
                   </form>
                 )}
