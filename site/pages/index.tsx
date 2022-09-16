@@ -15,7 +15,7 @@ const Umwelt = () => {
           <Image
             width={230}
             height={230}
-            src="https://represocial.fra1.cdn.digitaloceanspaces.com/download.png"
+            src="https://represocial.fra1.cdn.digitaloceanspaces.com/download2.png"
             alt="globe environment"
           />
         </div>
