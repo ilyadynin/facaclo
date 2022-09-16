@@ -48,7 +48,7 @@ const Hero: FC<HeroProps> = ({ headline, description, form }) => {
               )}
 
             {!form && (
-              <Link href="/">
+              <Link href="/uber-uns">
                 <a className="flex items-center text-accent-0 pt-3 font-bold hover:underline cursor-pointer w-max-content">
                   Über Faça
                   <ArrowRight width="20" heigh="20" className="ml-1" />
