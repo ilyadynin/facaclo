@@ -19,14 +19,14 @@ export default function Pages({ page }: { page: Page }) {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  const emailChange = (event) => {
+  const emailChange = (event: any) => {
     setEmail(event.target.value)
   }
 
-  const messageChange = (event) => {
+  const messageChange = (event: any) => {
     setMessage(event.target.value)
   }
-  const submitHandler = (event) => {
+  const submitHandler = (event: any) => {
     event.preventDefault()
     if (message.trim().length !== 0 && email.trim().length !== 0) {
       setSubmit(true)
