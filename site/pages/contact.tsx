@@ -56,7 +56,7 @@ export default function Pages({ page }: { page: Page }) {
             style={{
               display: 'flex',
               flexDirection: 'column',
-              margin: '15px auto',
+              margin: '15px 0px',
               width: 320,
             }}
           >
