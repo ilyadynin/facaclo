@@ -71,6 +71,8 @@
   }
 
   .image_container {
+    align-self: center;
+    margin-right: 40px;
     margin-left: auto;
     display: inline-flex;
     height: 230px;
