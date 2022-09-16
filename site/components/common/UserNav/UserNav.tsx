@@ -13,6 +13,7 @@ import {
   DropdownTrigger as DropdownTriggerInst,
   Button,
 } from '@components/ui'
+import { UserCircle } from '@styled-icons/boxicons-regular/UserCircle'
 
 import type { LineItem } from '@commerce/types/cart'
 
@@ -72,10 +73,10 @@ const UserNav: React.FC<{
               <DropdownTrigger>
                 <button
                   aria-label="Menu"
-                  className="button"
+                  className={s.avatarButton}
                   onClick={() => (isCustomerLoggedIn ? null : openModal())}
                 >
-                  <Avatar />
+                  <UserCircle />
                 </button>
               </DropdownTrigger>
               <CustomerMenuContent />
