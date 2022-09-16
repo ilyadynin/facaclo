@@ -18,7 +18,7 @@ const Hero: FC<HeroProps> = ({ headline, description, form }) => {
   }
 
   return (
-    <div className="bg-accent-9 border-b border-t border-accent-2">
+    <div className="bg-accent-5 border-b border-t border-accent-2">
       <Container>
         <div className={s.root}>
           {(!form && <h2 className={s.title}>SEI EINFACH FAÇA</h2>) ||
