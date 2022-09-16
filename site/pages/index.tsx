@@ -1,6 +1,7 @@
 import commerce from '@lib/api/commerce'
 import { Layout } from '@components/common'
 import { ProductCard } from '@components/product'
+import Image from 'next/image'
 import { Grid, Marquee, Hero } from '@components/ui'
 import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
@@ -9,21 +10,34 @@ import s from './index.module.css'
 const Umwelt = () => {
   return (
     <div className={s.container}>
-      <h2 className={s.title}>Umweltfreundlichkeit 🌍</h2>
-      <p className={s.description}>
-        Uns ist es wichtig, dass meine Produkte so umweltfreundlich wie möglich
-        produziert/hergestellt werden. Ich biete derzeit schon eine Verpackung
-        an, die komplett recyclebar ist, aus pflanzlichen Bestandteilen besteht
-        und biologisch abbaubar ist. Nachhaltigkeit bei Textilien ist uns
-        ebenfalls sehr wichtig, darum habe ich lange nach einer perfekten
-        Produktion gesucht, die meinen Erwartungen entspricht. Nach langer suche
-        habe ich einen Hersteller gefunden, der genau auf dies zutrifft. Die
-        Produkte, die ich ab der nächsten Kollektion anbiete, bestehen zu 100%
-        aus Bio-Baumwolle. Das heißt, dass für die Produktion von Baumwolle
-        keine chemischen Düngermittel oder Pestizide verwendet werden und das
-        somit Produkt natürlich wächst. Zusätzlich bestehen die Fäden der
-        Produkte aus recyclebarer Baumwolle.
-      </p>
+      <div className={s.container_content}>
+        <div className={s.image_container}>
+          <Image
+            width={230}
+            height={230}
+            src="https://represocial.fra1.cdn.digitaloceanspaces.com/download.png"
+            alt="globe environment"
+          />
+        </div>
+        <div className={s.text_container}>
+          <h2 className={s.title}>Umweltfreundlichkeit 🌍</h2>
+          <p className={s.description}>
+            Uns ist es wichtig, dass meine Produkte so umweltfreundlich wie
+            möglich produziert/hergestellt werden. Ich biete derzeit schon eine
+            Verpackung an, die komplett recyclebar ist, aus pflanzlichen
+            Bestandteilen besteht und biologisch abbaubar ist. Nachhaltigkeit
+            bei Textilien ist uns ebenfalls sehr wichtig, darum habe ich lange
+            nach einer perfekten Produktion gesucht, die meinen Erwartungen
+            entspricht. Nach langer suche habe ich einen Hersteller gefunden,
+            der genau auf dies zutrifft. Die Produkte, die ich ab der nächsten
+            Kollektion anbiete, bestehen zu 100% aus Bio-Baumwolle. Das heißt,
+            dass für die Produktion von Baumwolle keine chemischen Düngermittel
+            oder Pestizide verwendet werden und das somit Produkt natürlich
+            wächst. Zusätzlich bestehen die Fäden der Produkte aus recyclebarer
+            Baumwolle.
+          </p>
+        </div>
+      </div>
     </div>
   )
 }

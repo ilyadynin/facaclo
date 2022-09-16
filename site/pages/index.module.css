@@ -4,7 +4,6 @@
 
 .container {
   margin: auto;
-  max-width: 600px;
   padding: 50px;
 }
 
@@ -38,5 +37,53 @@
 
 @screen xl {
   .title {
+  }
+}
+
+@screen xl {
+  .container_content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image_container {
+    margin-left: auto;
+    display: inline-flex;
+    height: 230px;
+    width: 250px;
+  }
+
+  .image_container span {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text_container {
+    max-width: 560px;
+    margin-right: auto;
+  }
+}
+
+@screen lg {
+  .container_content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .image_container {
+    margin-left: auto;
+    display: inline-flex;
+    height: 230px;
+    width: 250px;
+  }
+
+  .image_container span {
+    width: 250px;
+    height: 250px;
+  }
+
+  .text_container {
+    max-width: 560px;
+    margin-right: auto;
   }
 }
