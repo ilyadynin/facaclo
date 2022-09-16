@@ -24,7 +24,7 @@ Demo live at: [demo.vercel.store](https://demo.vercel.store/)
 
 ```bash
 yarn # run this command in root folder of the mono repo
-yarn dev
+yarn devd
 ```
 
 > If you encounter any problems while installing and running for the first time, please see the Troubleshoot section
