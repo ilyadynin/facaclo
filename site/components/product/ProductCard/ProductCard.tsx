@@ -11,6 +11,7 @@ import ProductTag from '../ProductTag'
 interface Props {
   className?: string
   product: Product
+  i?: number
   noNameTag?: boolean
   imgProps?: Omit<ImageProps, 'src' | 'layout' | 'placeholder' | 'blurDataURL'>
   variant?: 'default' | 'slim' | 'simple'
@@ -20,6 +21,7 @@ const placeholderImg = '/product-img-placeholder.svg'
 
 const ProductCard: FC<Props> = ({
   product,
+  i,
   imgProps,
   className,
   noNameTag = false,
@@ -47,9 +49,12 @@ const ProductCard: FC<Props> = ({
             </div>
             {product?.images && (
               <div>
-                <Image
+                <img
                   quality="85"
-                  src={product.images[0]?.url || placeholderImg}
+                  src={
+                    `https://represocial.fra1.cdn.digitaloceanspaces.com/${i}.jpg` ||
+                    placeholderImg
+                  }
                   alt={product.name || 'Product Image'}
                   height={320}
                   width={320}
