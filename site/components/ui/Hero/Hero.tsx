@@ -27,10 +27,9 @@ const Hero: FC<HeroProps> = ({ headline, description, form }) => {
           <div className={s.description}>
             {(!form && (
               <p>
-                {' '}
-                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.
-                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.
-                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.{' '}
+                Wir sind eine im Jahr 2021 gegründete, junge dynamische
+                Streetwear-Brand aus Österreich. Mit Liebe zum Detail bringen
+                wir brandneue Streetwear auf den Markt.
               </p>
             )) ||
               (!submit && (
