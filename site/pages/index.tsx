@@ -11,10 +11,10 @@ const Umwelt = () => {
     <div className={s.container}>
       <h2 className={s.title}>Umweltfreundlichkeit 🌍</h2>
       <p className={s.description}>
-        Mir ist es wichtig, dass meine Produkte so umweltfreundlich wie möglich
+        Uns ist es wichtig, dass meine Produkte so umweltfreundlich wie möglich
         produziert/hergestellt werden. Ich biete derzeit schon eine Verpackung
         an, die komplett recyclebar ist, aus pflanzlichen Bestandteilen besteht
-        und biologisch abbaubar ist. Nachhaltigkeit bei Textilien ist mir
+        und biologisch abbaubar ist. Nachhaltigkeit bei Textilien ist uns
         ebenfalls sehr wichtig, darum habe ich lange nach einer perfekten
         Produktion gesucht, die meinen Erwartungen entspricht. Nach langer suche
         habe ich einen Hersteller gefunden, der genau auf dies zutrifft. Die
