@@ -22,17 +22,17 @@ const Umwelt = () => {
         <div className={s.text_container}>
           <h2 className={s.title}>Umweltfreundlichkeit 🌍</h2>
           <p className={s.description}>
-            Uns ist es wichtig, dass meine Produkte so umweltfreundlich wie
-            möglich produziert/hergestellt werden. Wir biete derzeit schon eine
+            Uns ist es wichtig, dass unsere Produkte so umweltfreundlich wie
+            möglich produziert/hergestellt werden. Wir bieten derzeit schon eine
             Verpackung an, die komplett recyclebar ist, aus pflanzlichen
             Bestandteilen besteht und biologisch abbaubar ist. Nachhaltigkeit
             bei Textilien ist uns ebenfalls sehr wichtig, darum haben wir lange
-            nach einer perfekten Produktion gesucht, die meinen Erwartungen
+            nach einer perfekten Produktion gesucht, die unseren Erwartungen
             entspricht. Nach langer suche haben wir einen Hersteller gefunden,
             der genau auf dies zutrifft. Die Produkte, die wir ab der nächsten
             Kollektion anbieten, bestehen zu 100% aus Bio-Baumwolle. Das heißt,
             dass für die Produktion von Baumwolle keine chemischen Düngermittel
-            oder Pestizide verwendet werden und das somit Produkt natürlich
+            oder Pestizide verwendet werden und das Produkt somit natürlich
             wächst. Zusätzlich bestehen die Fäden der Produkte aus recyclebarer
             Baumwolle.
           </p>
