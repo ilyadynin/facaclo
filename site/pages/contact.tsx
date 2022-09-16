@@ -37,14 +37,14 @@ export default function Pages({ page }: { page: Page }) {
     <div className="max-w-2xl mx-8 sm:mx-auto py-20">
       <div>
         <h3 style={{ fontSize: 35, fontWeight: 'bold', marginBottom: 20 }}>
-          Contact
+          Kontaktier uns 💚
         </h3>
         {(!submit && (
           <p style={{ maxWidth: 600 }}>
             Hast du möglicherweise (noch) offene Fragen oder ein Problem? Gerne
             helfen wir Dir weiter! Wir stehen dir gerne per Mail zur Verfügung.
             Fülle einfach das Formular aus und wir nehmen innerhalb von 1
-            Werktag Kontakt mit Dir auf!💚
+            Werktag Kontakt mit Dir auf! 💚
           </p>
         )) || (
           <p style={{ maxWidth: 600 }}>Deine Nachricht wurde gesendet 💚</p>
