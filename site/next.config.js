@@ -14,7 +14,10 @@ module.exports = withCommerceConfig({
     locales: ['en-US', 'es'],
     defaultLocale: 'en-US',
   },
-  images: { domains: ['represocial.fra1.cdn.digitaloceanspaces.com'], formats: ['image/avif', 'image/jpg', 'image/webp'],
+  images: {
+    domains: ['represocial.fra1.cdn.digitaloceanspaces.com'],
+    formats: ['image/avif', 'image/jpg', 'image/webp'],
+  },
   rewrites() {
     return [
       (isBC || isShopify || isSwell || isVendure || isSaleor) && {
