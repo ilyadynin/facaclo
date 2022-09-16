@@ -14,6 +14,8 @@
   @apply py-4 px-6 bg-primary text-primary font-bold;
   min-height: 70px;
   font-size: inherit;
+  background-color: rgb(255 255 255 / 60%);
+  color: white;
   letter-spacing: inherit;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
@@ -21,6 +23,7 @@
 
 .root .name span.fontsizing {
   display: flex;
+  background-color: rgb(255 255 255 / 60%);
   padding-top: 1.5rem;
 }
 

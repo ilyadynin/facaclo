@@ -1,11 +1,12 @@
 import cn from 'clsx'
 import { inherits } from 'util'
 import s from './ProductTag.module.css'
+import { useRouter } from 'next/router'
 
 interface ProductTagProps {
   className?: string
   name: string
-  price: string
+  price?: string
   fontSize?: number
 }
 
@@ -15,6 +16,8 @@ const ProductTag: React.FC<ProductTagProps> = ({
   className = '',
   fontSize = 32,
 }) => {
+  const router = useRouter()
+
   return (
     <div className={cn(s.root, className)}>
       <h3 className={s.name}>
@@ -28,7 +31,7 @@ const ProductTag: React.FC<ProductTagProps> = ({
           {name}
         </span>
       </h3>
-      <div className={s.price}>{price}</div>
+      {router.pathname != '/' && <div className={s.price}>{price}</div>}
     </div>
   )
 }
