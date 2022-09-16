@@ -49,7 +49,7 @@ const ProductCard: FC<Props> = ({
             </div>
             {product?.images && (
               <div>
-                <img
+                <Image
                   quality="85"
                   src={
                     `https://represocial.fra1.cdn.digitaloceanspaces.com/${i}.jpg` ||
