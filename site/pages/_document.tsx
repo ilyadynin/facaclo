@@ -4,7 +4,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
         <Head>
           <script
             async
