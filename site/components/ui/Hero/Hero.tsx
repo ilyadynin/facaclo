@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useState } from 'react'
 import { Container } from '@components/ui'
 import { ArrowRight } from '@components/icons'
 import s from './Hero.module.css'
@@ -11,13 +11,42 @@ interface HeroProps {
 }
 
 const Hero: FC<HeroProps> = ({ headline, description, form }) => {
+  const [submit, setSubmit] = useState(false)
+
+  const submitHandler = () => {
+    setSubmit(true)
+  }
+
   return (
     <div className="bg-accent-9 border-b border-t border-accent-2">
       <Container>
         <div className={s.root}>
-          <h2 className={s.title}>{headline}</h2>
+          {(!form && <h2 className={s.title}>SEI EINFACH FAÇA</h2>) ||
+            (!submit && <h2 className={s.title}>NICHTS MEHR VERPASSEN</h2>) ||
+            (submit && <h2 className={s.title}>DANKESCHÖN</h2>)}
           <div className={s.description}>
-            <p>{description}</p>
+            {(!form && (
+              <p>
+                {' '}
+                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.
+                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.
+                Wir sind eine junge dynamische Streetwear-Brand aus Österreich.{' '}
+              </p>
+            )) ||
+              (!submit && (
+                <p>
+                  Sicher dir einen 5€ Gutschein und melde dich für unseren
+                  Newsletter an, um nie wieder ein Kollektion zu verpassen.
+                </p>
+              )) || (
+                <p>
+                  {' '}
+                  Danke dass du jetzt teil des Teams geworden bist ;)Danke dass
+                  du jetzt teil des Teams geworden bist ;)Danke dass du jetzt
+                  teil des Teams geworden bist ;){' '}
+                </p>
+              )}
+
             {!form && (
               <Link href="/">
                 <a className="flex items-center text-accent-0 pt-3 font-bold hover:underline cursor-pointer w-max-content">
@@ -28,11 +57,12 @@ const Hero: FC<HeroProps> = ({ headline, description, form }) => {
             )}
             {form && (
               <div>
-                Newsletter
-                <form>
-                  <input type="text" />
-                  <input type="submit" />
-                </form>
+                {!submit && (
+                  <form>
+                    <input type="text" />
+                    <input type="submit" onClick={submitHandler} />
+                  </form>
+                )}
               </div>
             )}
           </div>

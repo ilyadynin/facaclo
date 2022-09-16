@@ -4,6 +4,29 @@ import { ProductCard } from '@components/product'
 import { Grid, Marquee, Hero } from '@components/ui'
 import HomeAllProductsGrid from '@components/common/HomeAllProductsGrid'
 import type { GetStaticPropsContext, InferGetStaticPropsType } from 'next'
+import s from './index.module.css'
+
+const Umwelt = () => {
+  return (
+    <div className={s.container}>
+      <h2 className={s.title}>Umweltfreundlichkeit 🌍</h2>
+      <p className={s.description}>
+        Mir ist es wichtig, dass meine Produkte so umweltfreundlich wie möglich
+        produziert/hergestellt werden. Ich biete derzeit schon eine Verpackung
+        an, die komplett recyclebar ist, aus pflanzlichen Bestandteilen besteht
+        und biologisch abbaubar ist. Nachhaltigkeit bei Textilien ist mir
+        ebenfalls sehr wichtig, darum habe ich lange nach einer perfekten
+        Produktion gesucht, die meinen Erwartungen entspricht. Nach langer suche
+        habe ich einen Hersteller gefunden, der genau auf dies zutrifft. Die
+        Produkte, die ich ab der nächsten Kollektion anbiete, bestehen zu 100%
+        aus Bio-Baumwolle. Das heißt, dass für die Produktion von Baumwolle
+        keine chemischen Düngermittel oder Pestizide verwendet werden und das
+        somit Produkt natürlich wächst. Zusätzlich bestehen die Fäden der
+        Produkte aus recyclebarer Baumwolle.
+      </p>
+    </div>
+  )
+}
 
 export async function getStaticProps({
   preview,
@@ -72,6 +95,7 @@ export default function Home({
           <ProductCard key={product.id} product={product} variant="slim" />
         ))}
       </Marquee>
+      <Umwelt></Umwelt>
     </>
   )
 }
